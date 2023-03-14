@@ -1,4 +1,6 @@
-//2. Write a Dart Program to create a function as expression which returns unique list of names by passing a list of names to that function.
+//2. Write a Dart Program to create a function as expression which returns unique list
+
+// of names by passing a list of names to that function.
 
 import 'dart:io';
 

@@ -4,22 +4,26 @@ import 'dart:io';
 
 class Fect
 {
-  int? no=0,sum=1,fect=;
+  int? no=0,sum=1;
 
   void set()
   {
     print("Enter the the any number=>>");
     no = int.parse(stdin.readLineSync()!);
+    print("${no} Number fectorial is =>>${get(no!)}");
   }
-  void get()
+
+  int get(int no)
   {
-    for(i=1;i!<=no!;i++)
+    if(no==1)
       {
-        fect = no!* sum!;
+        return 1;
       }
+    return no*get(no-1);
   }
 }
 void main()
 {
-  
+  Fect f =Fect();
+  f.set();
 }
